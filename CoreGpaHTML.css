@@ -1,0 +1,60 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    text-align: center;
+    height: 10%;
+    border-bottom-style: solid;
+    border-bottom-color: #a4a4a4;
+    width: 100%;
+}
+
+.formTitle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.form-outline {
+    text-align: center;
+    border-radius: 8px;
+    margin: auto;
+    width: 300px;
+}
+
+.form-outline2 {
+    border-radius: 8px;
+}
+
+.form-width {
+    width: 125px;
+}
+
+.form-width-med {
+    width: 180px;
+}
+
+.form-width-long {
+    width: 240px;
+    height: 20px;
+}
+
+.form-width-small {
+    width: 100px;
+}
+
+.calcButton {
+    background-color: #008CBA;
+    color: #FFFFFF;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.calcButton:hover {
+    background-color: #027ea7;
+    color: #cdcdcd;
+}

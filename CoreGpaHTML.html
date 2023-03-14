@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team 8 Calculate GPA</title>
+    <link rel="stylesheet" href="coreGpaHTML.css">
     <script>
     //This function is called when the user clicks on the calcGPA button
     function calcGPA()
@@ -33,16 +34,19 @@
 
 </head>
 <body>
+    <div class="navbar">
+        <a href="https://github.com/ianpurnell01/HTMLCoreGPA.git"><img src="/logos/logo_transparent.png" style="width: 7%;"></a>
+    </div>
     <form id="CoreForm">
-        <legend style="text-align: center;">Calculate GPA</legend>
+        <legend class="formTitle">Calculate GPA</legend>
         <!--Creates a main fieldset that outlines the entire form-->
-        <fieldset style="width: 300px; margin: auto;">
+        <fieldset class="form-outline">
             <!--Creating a table so all the letter grade dropdowns can be next to each other-->
             <table>
                 <tr>
                     <td>
                         <!--Creates dropdown menu for the Accounting Grade-->
-                        <fieldset style="width: 125px;">
+                        <fieldset class="form-outline2 form-width">
                             <legend style="text-align:center ;"> Accounting Grade</legend>
                             <select name="AccGradeList" id="acc200Grade">
                                 <option value="4.0">A</option>
@@ -63,7 +67,7 @@
 
                     <td>
                         <!--Creates dropdown menu for IS201 Grade-->
-                        <fieldset style="width: 100px;">
+                        <fieldset class="form-outline2 form-width-small">
                             <legend style="text-align:center ;"> IS201 Grade</legend>
                             <select name="IS201GradeList" id="is201Grade">
                                 <option value="4.0">A</option>
@@ -84,7 +88,7 @@
 
                     <td>
                         <!--Creates dropdown menu for IS303 Grade-->
-                        <fieldset style="width: 100px;">
+                        <fieldset class="form-outline2 form-width-small">
                             <legend style="text-align:center ;"> IS303 Grade</legend>
                             <select name="IS303GradeList" id="is303Grade">
                                 <option value="4.0">A</option>
@@ -107,7 +111,7 @@
             <br>
 
             <!--Creates a dropdown menu for the essay score -- drops down a line from the above inputs-->
-            <fieldset style="width: 100px;">
+            <fieldset class="form-outline2 form-width">
                 <legend style="text-align:center ;">Essay Score</legend>
                 <select name="EssayScore" id="essay">
                     <option value="0">0</option>
@@ -124,7 +128,7 @@
                 <tr>
                     <td>
                         <!--Creates Overall GPA input box that allows for decimals (.1)-->
-                        <fieldset style="width: 0px;">
+                        <fieldset class="form-outline2 form-width-med">
                             <legend style="text-align:center ;">Overall GPA</legend>
                             <input type="number" id="overallGPA" step=".1">
                         </fieldset>
@@ -132,7 +136,7 @@
 
                     <td>
                         <!--Creates last 30 GPA input box that allows for decimals (.1)-->
-                        <fieldset style="width: 0px;">
+                        <fieldset class="form-outline2 form-width-med">
                             <legend style="text-align:center ;">Last 30 Credits GPA</legend>
                             <input type="number" id="last30GPA" step=".1">
                         </fieldset>
@@ -145,11 +149,11 @@
             <table>
                 <tr>
                     <td>
-                        <button type="button" onclick="calcGPA()">Calculate GPA</button>
+                        <button class="calcButton" type="button" onclick="calcGPA()">Calculate GPA</button>
                     </td>
 
                     <td>
-                        <fieldset style="width: 115px;">
+                        <fieldset class="form-outline2 form-width-long">
                             <label id="coreGPA"></label>
                         </fieldset>
                     </td>
